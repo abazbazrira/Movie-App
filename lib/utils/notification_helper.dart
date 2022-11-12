@@ -1,8 +1,8 @@
 import 'dart:convert';
 import 'dart:math';
 
-import 'package:dicoding_bfaf_submission/common/navigation.dart';
-import 'package:dicoding_bfaf_submission/data/model/restaurant.dart';
+import 'package:dicoding_mfde_submission/common/navigation.dart';
+import 'package:dicoding_mfde_submission/data/model/restaurant.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:rxdart/subjects.dart';
 
@@ -22,7 +22,7 @@ class NotificationHelper {
     var initializationSettingsAndroid =
         const AndroidInitializationSettings('ic_launcher');
 
-    var initializationSettingsIOS = const IOSInitializationSettings(
+    var initializationSettingsIOS = const DarwinInitializationSettings(
       requestAlertPermission: false,
       requestBadgePermission: false,
       requestSoundPermission: false,
@@ -35,12 +35,36 @@ class NotificationHelper {
 
     await flutterLocalNotificationsPlugin.initialize(
       initializationSettings,
-      onSelectNotification: (String? payload) async {
-        if (payload != null) {
-          print('notification payload: ' + payload);
+      onDidReceiveNotificationResponse:
+          (NotificationResponse notificationResponse) {
+        switch (notificationResponse.notificationResponseType) {
+          case NotificationResponseType.selectedNotification:
+            selectNotificationSubject
+                .add(notificationResponse.payload.toString());
+            break;
+          case NotificationResponseType.selectedNotificationAction:
+            selectNotificationSubject
+                .add(notificationResponse.payload.toString());
+            break;
         }
-        selectNotificationSubject.add(payload ?? 'empty payload');
       },
+      onDidReceiveBackgroundNotificationResponse:
+          (NotificationResponse notificationResponse) {
+        // ignore: avoid_print
+        print('notification(${notificationResponse.id}) action tapped: '
+            '${notificationResponse.actionId} with'
+            ' payload: ${notificationResponse.payload}');
+        if (notificationResponse.input?.isNotEmpty ?? false) {
+          // ignore: avoid_print
+          print(
+              'notification action tapped with input: ${notificationResponse.input}');
+        }
+      }, // onSelectNotification: (String? payload) async {
+      //   if (payload != null) {
+      //     print('notification payload: ' + payload);
+      //   }
+      //   selectNotificationSubject.add(payload ?? 'empty payload');
+      // },
     );
   }
 
@@ -60,7 +84,7 @@ class NotificationHelper {
       styleInformation: const DefaultStyleInformation(true, true),
     );
 
-    var iOSPlatformChannelSpecifics = const IOSNotificationDetails();
+    var iOSPlatformChannelSpecifics = const DarwinNotificationDetails();
     var platformChannelSpecifics = NotificationDetails(
       android: androidPlatformChannelSpecifics,
       iOS: iOSPlatformChannelSpecifics,

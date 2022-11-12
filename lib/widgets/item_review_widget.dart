@@ -1,4 +1,4 @@
-import 'package:dicoding_bfaf_submission/data/model/customer_review.dart';
+import 'package:dicoding_mfde_submission/data/model/customer_review.dart';
 import 'package:flutter/material.dart';
 
 class ItemReviewWidget extends StatelessWidget {

@@ -1,6 +1,6 @@
-import 'package:dicoding_bfaf_submission/data/api/api_service.dart';
-import 'package:dicoding_bfaf_submission/data/model/restaurant.dart';
-import 'package:dicoding_bfaf_submission/utils/result_state.dart';
+import 'package:dicoding_mfde_submission/data/api/api_service.dart';
+import 'package:dicoding_mfde_submission/data/model/restaurant.dart';
+import 'package:dicoding_mfde_submission/utils/result_state.dart';
 import 'package:flutter/material.dart';
 
 class SearchRestaurantProvider extends ChangeNotifier {

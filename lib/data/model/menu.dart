@@ -1,4 +1,4 @@
-import 'package:dicoding_bfaf_submission/data/model/food_drink.dart';
+import 'package:dicoding_mfde_submission/data/model/food_drink.dart';
 
 class Menu {
   late List<FoodDrink> foods;

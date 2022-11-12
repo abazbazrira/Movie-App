@@ -5,7 +5,7 @@
 
    <application
         android:label="dicoding_mfde_submission"
-        android:name="${applicationName}"
+        android:name="androidx.multidex.MultiDexApplication"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"

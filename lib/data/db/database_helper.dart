@@ -1,4 +1,4 @@
-import 'package:dicoding_bfaf_submission/data/model/restaurant.dart';
+import 'package:dicoding_mfde_submission/data/model/restaurant.dart';
 import 'package:sqflite/sqflite.dart';
 
 class DatabaseHelper {

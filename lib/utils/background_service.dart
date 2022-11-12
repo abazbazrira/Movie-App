@@ -1,9 +1,9 @@
 import 'dart:isolate';
 import 'dart:ui';
 
-import 'package:dicoding_bfaf_submission/data/api/api_service.dart';
-import 'package:dicoding_bfaf_submission/main.dart';
-import 'package:dicoding_bfaf_submission/utils/notification_helper.dart';
+import 'package:dicoding_mfde_submission/data/api/api_service.dart';
+import 'package:dicoding_mfde_submission/utils/notification_helper.dart';
+import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 
 final ReceivePort port = ReceivePort();
 
@@ -30,7 +30,7 @@ class BackgroundService {
     final NotificationHelper _notificationHelper = NotificationHelper();
     var result = await ApiService().getList();
     await _notificationHelper.showNotification(
-        flutterLocalNotificationsPlugin, result);
+        FlutterLocalNotificationsPlugin(), result);
 
     _uiSendPort ??= IsolateNameServer.lookupPortByName(_isolateName);
     _uiSendPort?.send(null);

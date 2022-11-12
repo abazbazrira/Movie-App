@@ -1,4 +1,4 @@
-import 'package:bloc/bloc.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:dicoding_mfde_submission/domain/entities/movie_tv_show.dart';
 import 'package:dicoding_mfde_submission/domain/usecases/search.dart';
 import 'package:equatable/equatable.dart';

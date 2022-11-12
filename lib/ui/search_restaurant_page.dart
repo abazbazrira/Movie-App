@@ -1,10 +1,10 @@
-import 'package:dicoding_bfaf_submission/data/api/api_service.dart';
-import 'package:dicoding_bfaf_submission/provider/search_restaurant_provider.dart';
-import 'package:dicoding_bfaf_submission/utils/result_state.dart';
-import 'package:dicoding_bfaf_submission/widgets/error_state_widget.dart';
-import 'package:dicoding_bfaf_submission/widgets/item_restaurant_widget.dart';
-import 'package:dicoding_bfaf_submission/widgets/loading_state_widget.dart';
-import 'package:dicoding_bfaf_submission/widgets/platform_widget.dart';
+import 'package:dicoding_mfde_submission/data/api/api_service.dart';
+import 'package:dicoding_mfde_submission/provider/search_restaurant_provider.dart';
+import 'package:dicoding_mfde_submission/utils/result_state.dart';
+import 'package:dicoding_mfde_submission/widgets/error_state_widget.dart';
+import 'package:dicoding_mfde_submission/widgets/item_restaurant_widget.dart';
+import 'package:dicoding_mfde_submission/widgets/loading_state_widget.dart';
+import 'package:dicoding_mfde_submission/widgets/platform_widget.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';

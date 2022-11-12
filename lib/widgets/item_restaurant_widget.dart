@@ -1,5 +1,5 @@
-import 'package:dicoding_bfaf_submission/data/model/restaurant.dart';
-import 'package:dicoding_bfaf_submission/ui/detail_restaurant_page.dart';
+import 'package:dicoding_mfde_submission/data/model/restaurant.dart';
+import 'package:dicoding_mfde_submission/ui/detail_restaurant_page.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';

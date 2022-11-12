@@ -1,9 +1,9 @@
 import 'dart:io';
 
-import 'package:dicoding_bfaf_submission/data/preference/preference_helper.dart';
-import 'package:dicoding_bfaf_submission/provider/scheduling_provider.dart';
-import 'package:dicoding_bfaf_submission/widgets/custom_dialog.dart';
-import 'package:dicoding_bfaf_submission/widgets/platform_widget.dart';
+import 'package:dicoding_mfde_submission/data/preference/preference_helper.dart';
+import 'package:dicoding_mfde_submission/provider/scheduling_provider.dart';
+import 'package:dicoding_mfde_submission/widgets/custom_dialog.dart';
+import 'package:dicoding_mfde_submission/widgets/platform_widget.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';

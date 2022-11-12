@@ -1,7 +1,7 @@
 import 'package:android_alarm_manager_plus/android_alarm_manager_plus.dart';
-import 'package:dicoding_bfaf_submission/data/preference/preference_helper.dart';
-import 'package:dicoding_bfaf_submission/utils/background_service.dart';
-import 'package:dicoding_bfaf_submission/utils/date_time_helper.dart';
+import 'package:dicoding_mfde_submission/data/preference/preference_helper.dart';
+import 'package:dicoding_mfde_submission/utils/background_service.dart';
+import 'package:dicoding_mfde_submission/utils/date_time_helper.dart';
 import 'package:flutter/material.dart';
 
 class SchedulingProvider extends ChangeNotifier {

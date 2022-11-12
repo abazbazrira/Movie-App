@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:dicoding_bfaf_submission/data/model/restaurant.dart';
+import 'package:dicoding_mfde_submission/data/model/restaurant.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 import 'dummy_data.dart';

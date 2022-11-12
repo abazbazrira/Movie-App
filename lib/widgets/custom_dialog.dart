@@ -1,5 +1,5 @@
 import 'dart:io';
-import 'package:dicoding_bfaf_submission/common/navigation.dart';
+import 'package:dicoding_mfde_submission/common/navigation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 

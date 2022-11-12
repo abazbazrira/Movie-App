@@ -1,9 +1,9 @@
 import 'dart:convert';
 
-import 'package:dicoding_bfaf_submission/data/model/category.dart';
-import 'package:dicoding_bfaf_submission/data/model/customer_review.dart';
-import 'package:dicoding_bfaf_submission/data/model/menu.dart';
-import 'package:dicoding_bfaf_submission/utils/set_default_value.dart';
+import 'package:dicoding_mfde_submission/data/model/category.dart';
+import 'package:dicoding_mfde_submission/data/model/customer_review.dart';
+import 'package:dicoding_mfde_submission/data/model/menu.dart';
+import 'package:dicoding_mfde_submission/utils/set_default_value.dart';
 
 class BaseResponse {
   late bool? error;
